@@ -46,7 +46,8 @@ window.renderStatistics = function (ctx, players, times) {
     ctx.fillText(players[i], CLOUD_X + DISTANCE_BAR + (DISTANCE_BAR + BAR_WIDTH) * i, CLOUD_HEIGHT - GAP);
   }
   for (i = 0; i < players.length; i++) {
-    if (players[i] === 'Вы') {
+    if (players[i] === 'Вы')
+    {
       ctx.fillStyle = 'red';
     }
     else {
