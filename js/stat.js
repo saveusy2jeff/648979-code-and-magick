@@ -43,14 +43,14 @@ window.renderStatistics = function (ctx, players, times) {
 
   for (var i = 0; i < players.length; i++) {
     ctx.font = '16px PT Mono';
-    ctx.fillText(players[i], CLOUD_X + DISTANCE_BAR + (DISTANCE_BAR + BAR_WIDTH)* i, CLOUD_HEIGHT - GAP);
+    ctx.fillText(players[i], CLOUD_X + DISTANCE_BAR + (DISTANCE_BAR + BAR_WIDTH) * i, CLOUD_HEIGHT - GAP);
   }
   for (i = 0; i < players.length; i++) {
     if (players[i] === 'Вы') {
-      ctx.fillStyle = 'red';
+      ctx.fillStyle = 'red'; 
     }
     else {
-      ctx.fillStyle = 'rgba(0, 0, 255, Math.random() + 0.1'};
+      ctx.fillStyle = 'rgba(0, 0, 255, Math.random() + 0.1'; }
     ctx.fillRect(CLOUD_X + DISTANCE_BAR + (DISTANCE_BAR + BAR_WIDTH) * i, CLOUD_HEIGHT - FONT_GAP, BAR_WIDTH, (BAR_HEIGHT * (times[i] / maxTime)) * -1);
   }
   for (i = 0; i < players.length; i++) {
