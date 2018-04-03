@@ -47,7 +47,8 @@ window.renderStatistics = function (ctx, players, times) {
   }
   for (i = 0; i < players.length; i++) {
     if (players[i] === 'Вы') {
-      ctx.fillStyle = 'red'; }
+      ctx.fillStyle = 'red';
+    }
     else {
       ctx.fillStyle = 'rgba(0, 0, 255, Math.random() + 0.1';
     }
